@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twans Carousels</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #header1 {
+            display: flex;
+            justify-content: center;
+            border: 6px dashed rgb(228, 212, 122);
+            background-color: purple;
+            text-align: center;
+            color: white;
+
+        }
+
+        #bodynojs {
+            background-color: rgb(172, 131, 27);
+
+        }
+
+        #window {
+            border: 7px solid;
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+            overflow: hidden; 
+            /**** overflow keeps border of pics from flowing into next box. Pics look separated */
+
+        }
+
+
+        #slider1 {
+            display: flex;
+            /* transform: translateX(-400px); */
+            /* -500 is the width of the pic and to translate to the left it is -400 for first pic,
+             -1000 for second pic  and -1200 for third pic which will have a blank square*/
+            animation: mcSlide 20s infinite;
+            animation-play-state: pause;
+            /* animation-direction: reverse; */
+
+        }
+
+        img {
+            height: 500px;
+            width: 400px;
+        }
+
+        /* give a start and end position and animate all the things in between it */
+        /* identifier is name of animation*/
+        /* @keyframes identifier { (right now by -500*/
+        @keyframes mcSlide {
+            0% {
+                transform: translateX(0px);
+            }
+
+            12.5% {
+                transform: translateX(-400px);
+            }
+
+            25% {
+                transform: translateX(-800px);
+            }
+
+            37.5% {
+                transform: translateX(-1200px);
+            }
+
+            50% {
+                transform: translateX(-1600px);
+            }
+
+            2.5% {
+                transform: translateX(-2000px);
+            }
+
+            75% {
+                transform: translateX(-2400px);
+            }
+
+            87.5% {
+                transform: translateX(-2800px);
+            }
+
+            100% {
+                transform: translateX(-3200px);
+            }
+        }
+
+        #window2 {
+            border: 2px solid;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            overflow: hidden; 
+            /**** overflow kids border of pic from flowing into next box */
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header1">
+        <h1> Twans MC Carousel(NO Javascript)</h1>
+    </div>
+    <br>
+    <div id="bodynojs">
+        <div id="window">
+            <div id="slider1">
+
+                <!-- <img src="./Images/gijs-coolen--5rcxih1e44-unsplash.jpg" alt="" id="Pic1"> -->
+                <img src="./Images/kawasaki-ninja.png" alt="" id="Pic1b">
+                <img src="./images/harley-davidson-52UeZUkp3Hs-unsplash.jpg" alt="" id="Pic2">
+                <img src="./Images/harley-davidson-eeTJKC_wz34-unsplash.jpg" alt="" id="Pic3">
+                <img src="./Images/yulian-as-gpvgmCBc_QE-unsplash.jpg" alt="" id="Pic4">
+                <!-- <img src="./Images/zac-wolff-Ptx8G07I6xI-unsplash.jpg" alt="" id="Pic5"> -->
+                <img src="./Images/warrior.jpg" alt="" id="Pic5b">
+                <img src="./Images/3wheelSpyder.jpg" alt="" id="Pic6">
+                <img src="./Images/kawasaki-ninja.png" alt="" id="Pic7">
+                <img src="./Images/warrior.jpg" alt="" id="Pic8">
+            </div>
+
+            <br>
+
+        </div>
+
+    </div>
+    <br>
+    <!------------------------------------------------------------------------------------------------------------  -->
+    <!--------------------------------------begin code for carousel using javascript for progression------------------>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <div id="header2">
+        <h1>Twan's Waterfall Carousel WITH Javascript</h1>
+    </div>
+    <br>
+    <br>
+    <!-- START slider with buttons -->
+    <div id="mySlider2">
+        <div id="img-box">
+            <img src="./Images/Rainbow Bridge.jpg" alt="" class="mySlide-imgs">
+            <!-- <img src="./Images/roberto-motoi-amvDOVI9BiQ-unsplash.jpg" alt="" id="Pic6">10 -->
+            <!-- <img src="./Images/robin-davidson-w_7z6Ga03lo-unsplash.jpg" alt="" id="Pic11"> -->
+            <!-- <img src="./Images/thomas-despeyroux-YELKk7PUeUY-unsplash.jpg" alt="" id="Pic13"> -->
+        </div>
+        <div>
+            <button class="myButton" onclick=prev()>Prev</button>
+            <button class="myButton" onclick=next()>Next</button>
+        </div>
+        <script src="/index.js"></script>
+    </div>
+    <marquee>
+        <h1>Shout outs for Images</h1>
+    </marquee>
+
+    <br>
+
+    <div>
+        <p>Photo by <a
+                href="https://unsplash.com/@zacwolff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zac
+                Wolff</a> on <a
+                href="https://unsplash.com/images/things/motorcycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash
+                AND </a>
+            Photo by <a
+                href="https://unsplash.com/@zacwolff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zac
+                Wolff</a> on <a
+                href="https://unsplash.com/images/things/motorcycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash
+                AND </a>,
+            Photo by <a
+                href="https://unsplash.com/@gijsparadijs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gijs
+                Coolen</a> on <a
+                href="https://unsplash.com/images/things/motorcycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash
+                AND </a>,
+            Photo by <a
+                href="https://unsplash.com/@harleydavidson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harley-Davidson
+                AND </a>
+            on <a
+                href="https://unsplash.com/images/things/motorcycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash
+                AND </a>,
+            Photo by <a
+                href="https://unsplash.com/@harleydavidson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harley-Davidson
+                AND </a>
+            on <a
+                href="https://unsplash.com/images/things/motorcycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash
+                !! THANK YOU!!</a>
+
+        </p>
+
+    </div>
+    </div>
+</body>
+
+</html>

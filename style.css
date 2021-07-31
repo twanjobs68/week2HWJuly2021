@@ -1,0 +1,43 @@
+#header2{
+    display:flex;
+    border: 5px dashed purple;
+    justify-content: center;
+    text-align: center;
+    background-color: gold;
+}
+
+
+
+#mySlider2{
+    margin:50px  auto;
+    width: 500px;
+    
+    
+}
+
+
+#img-box img{
+    width: 500px;
+    border-radius: 25px;
+    border: 5px solid purple;
+    }
+
+.myButton{
+    border: 2px dashed gold;
+    color: gold;
+    margin:15px auto;
+    font-size: 25px;
+    background:purple;
+    cursor:pointer;
+    padding:15px 55px;
+    border-radius: 15px;
+    justify-content: center;
+
+    
+}
+
+.myButton:hover{
+    background-color: salmon;
+    
+
+}
