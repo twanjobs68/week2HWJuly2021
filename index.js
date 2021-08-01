@@ -13,7 +13,7 @@ function prev(){
         return getPicture();
 
 }
-
+// if value of current picture is greatter than the length of elements in array minus 1 then subtract one from curPic count 
 function next(){
     if(curPicture >= allImages.length -1)
     curPicture= -1;
@@ -27,5 +27,6 @@ function getPicture(){
     return an_img.setAttribute('src', './Images/' + allImages[curPicture]);
 
 }
-
+// added event listener so that when either button is pressed function will be executed
 document.querySelector('.myButtonP').addEventListener('click', prev)
+document.querySelector('.myButtonN').addEventListener('click', next)

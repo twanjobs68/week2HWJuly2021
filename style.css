@@ -1,3 +1,6 @@
+
+
+
 #header2{
     display:flex;
     border: 5px dashed purple;
@@ -11,29 +14,20 @@
 #mySlider2{
     margin:50px  auto;
     width: 500px;
-    
-    
+    /* border:3px solid red; */
+   
 }
-
+    
 
 #img-box img{
     width: 500px;
     border-radius: 25px;
     border: 5px solid purple;
+
+
     }
 
-/* #myButton{
-    border: 2px dashed gold;
-    
-    background:purple;
-    
-    padding:15px 55px;
-    border-radius: 15px;
-    justify-content: center;
-    
-    
-    
-} */
+
 
 .myButtonP{
     border: 2px dashed gold;
@@ -72,4 +66,8 @@
     background-color: salmon;
     
 
+}
+marquee{
+    border: medium double black;
+    background-color: gold;
 }
