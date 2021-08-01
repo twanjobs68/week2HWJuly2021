@@ -52,9 +52,9 @@
         /* give a start and end position and animate all the things in between it */
         /* identifier is name of animation*/
         /* @keyframes identifier { (right now by -500*/
-        @keyframes mcSlide {
+         @keyframes mcSlide {
             0% {
-                transform: translateX(0px);
+                transform: translateX(-0px);
             }
 
             12.5% {
@@ -73,7 +73,7 @@
                 transform: translateX(-1600px);
             }
 
-            2.5% {
+            62.5% {
                 transform: translateX(-2000px);
             }
 
@@ -86,9 +86,11 @@
             }
 
             100% {
-                transform: translateX(-3200px);
+                transform: translateX(0px);
             }
-        }
+        } 
+
+      
 
         #window2 {
             border: 2px solid;
@@ -112,12 +114,11 @@
         <div id="window">
             <div id="slider1">
 
-                <!-- <img src="./Images/gijs-coolen--5rcxih1e44-unsplash.jpg" alt="" id="Pic1"> -->
+               
                 <img src="./Images/kawasaki-ninja.png" alt="" id="Pic1b">
                 <img src="./images/harley-davidson-52UeZUkp3Hs-unsplash.jpg" alt="" id="Pic2">
                 <img src="./Images/harley-davidson-eeTJKC_wz34-unsplash.jpg" alt="" id="Pic3">
                 <img src="./Images/yulian-as-gpvgmCBc_QE-unsplash.jpg" alt="" id="Pic4">
-                <!-- <img src="./Images/zac-wolff-Ptx8G07I6xI-unsplash.jpg" alt="" id="Pic5"> -->
                 <img src="./Images/warrior.jpg" alt="" id="Pic5b">
                 <img src="./Images/3wheelSpyder.jpg" alt="" id="Pic6">
                 <img src="./Images/kawasaki-ninja.png" alt="" id="Pic7">
@@ -141,14 +142,18 @@
     <!-- START slider with buttons -->
     <div id="mySlider2">
         <div id="img-box">
+            <!-- <img src="./Images/pika1.png" alt="" class="mySlide-imgs"> -->
             <img src="./Images/Rainbow Bridge.jpg" alt="" class="mySlide-imgs">
             <!-- <img src="./Images/roberto-motoi-amvDOVI9BiQ-unsplash.jpg" alt="" id="Pic6">10 -->
             <!-- <img src="./Images/robin-davidson-w_7z6Ga03lo-unsplash.jpg" alt="" id="Pic11"> -->
             <!-- <img src="./Images/thomas-despeyroux-YELKk7PUeUY-unsplash.jpg" alt="" id="Pic13"> -->
         </div>
-        <div>
-            <button class="myButton" onclick=prev()>Prev</button>
-            <button class="myButton" onclick=next()>Next</button>
+        <div id="myButton">
+            <!-- <button class="myButtonP" onclick=prev()>Prev</button> -->
+            <button class="myButtonP">Prev</button>
+            <button class="myButtonN" onclick=next()>Next</button>
+           
+           
         </div>
         <script src="/index.js"></script>
     </div>

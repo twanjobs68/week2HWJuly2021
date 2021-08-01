@@ -22,19 +22,51 @@
     border: 5px solid purple;
     }
 
-.myButton{
+/* #myButton{
+    border: 2px dashed gold;
+    
+    background:purple;
+    
+    padding:15px 55px;
+    border-radius: 15px;
+    justify-content: center;
+    
+    
+    
+} */
+
+.myButtonP{
     border: 2px dashed gold;
     color: gold;
-    margin:15px auto;
+    margin:40px;
     font-size: 25px;
     background:purple;
     cursor:pointer;
     padding:15px 55px;
     border-radius: 15px;
     justify-content: center;
-
-    
+    top:50%;
+    font-weight: bold;
+    margin-right:px;
+    justify-items:center;
 }
+
+.myButtonN{
+    border: 2px dashed gold;
+    color: gold;
+    margin:39px;
+    font-size: 25px;
+    background:purple;
+    cursor:pointer;
+    padding:15px 55px;
+    border-radius: 15px;
+    justify-content: center;
+    top:50%;
+    font-weight: bold;
+    margin-right:px;
+    justify-items:center;
+}
+
 
 .myButton:hover{
     background-color: salmon;
